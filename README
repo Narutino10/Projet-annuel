@@ -1,0 +1,78 @@
+# 📌 Projet Annuel
+
+Bienvenue dans le projet annuel ! Ce projet vise à mettre en pratique toutes les compétences acquises au cours de la formation, en respectant les bonnes pratiques en termes de développement, d'architecture et de sécurité.
+
+## 🛠 Technologies Utilisées
+
+### Frontend :
+- React.js + TypeScript
+- Vite
+- Tailwind CSS (optionnel)
+
+### Backend :
+- Node.js + TypeScript
+- Express.js
+- PostgreSQL (bientôt ajouté)
+- JWT pour l'authentification
+
+### DevOps :
+- Docker & Docker Compose
+- CI/CD (ajouté plus tard)
+- Hébergement sur un VPS
+
+---
+
+## 🚀 Installation et Lancement
+
+### 1️⃣ Prérequis
+- **Node.js** installé
+- **Docker & Docker Compose** installés
+- **Git** installé
+
+### 2️⃣ Cloner le dépôt
+```sh
+git clone https://github.com/Narutino10/Projet-annuel.git
+cd Projet-annuel
+```
+
+### 3️⃣ Lancer le projet avec Docker
+```sh
+docker-compose up --build
+```
+Cela va démarrer le **frontend** et le **backend** automatiquement.
+
+---
+
+## 📁 Structure du Projet
+
+```
+Projet-annuel/
+│── frontend/        # Code du frontend (React + TypeScript)
+│── backend/         # Code du backend (Node.js + Express + TypeScript)
+│── devops/          # Configurations Docker et DevOps
+│── docs/            # Documentation
+│── docker-compose.yml
+│── README.md        # Documentation du projet
+```
+
+---
+
+## 🏗 Fonctionnalités 
+✅ Frontend avec React + TypeScript  
+✅ Backend en Node.js + Express  
+✅ Conteneurisation avec Docker  
+⬜ Base de données PostgreSQL (bientôt)  
+⬜ CI/CD avec GitHub Actions (plus tard)  
+⬜ Authentification JWT/OAuth (plus tard)  
+
+---
+
+## 🔥 Roadmap
+- [ ] Finaliser la structure du projet
+- [ ] Ajouter la base de données PostgreSQL
+- [ ] Ajouter une authentification sécurisée
+- [ ] Implémenter les tests unitaires et fonctionnels
+---
+
+## 📄 Licence
+Ce projet est sous licence MIT. Tu peux l'utiliser librement !
