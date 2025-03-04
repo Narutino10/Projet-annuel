@@ -3,22 +3,39 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "8080:8080"
     volumes:
       - ./frontend:/app
       - /app/node_modules
-    environment:
-      - NODE_ENV=development
     depends_on:
       - backend
 
   backend:
     build: ./backend
     ports:
-      - "5000:5000"
+      - "3000:3000"
     volumes:
       - ./backend:/app
       - /app/node_modules
     environment:
       - NODE_ENV=development
-      - PORT=5000
+      - PORT=3000
+      - DATABASE_URL=postgres://user:password@db:5432/projet_annuel
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: projet_annuel
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
